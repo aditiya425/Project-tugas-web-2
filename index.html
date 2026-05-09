@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pendaftaran Mahasiswa</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Pendaftaran Mahasiswa Baru</h1>
+
+    <div class="form-group">
+        <label>Kode Pendaftaran</label>
+        <input type="text" id="kode">
+    </div>
+
+    <div class="form-group">
+        <label>Nama Pendaftar</label>
+        <input type="text" id="nama">
+    </div>
+
+    <div class="form-group">
+        <label>Jenis Kelamin</label>
+
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="jk" value="Laki-laki">
+                Laki-laki
+            </label>
+
+            <label>
+                <input type="radio" name="jk" value="Perempuan">
+                Perempuan
+            </label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Tanggal Lahir</label>
+        <input type="date" id="tgl">
+    </div>
+
+    <div class="form-group">
+        <label>Asal Sekolah</label>
+        <input type="text" id="asal">
+    </div>
+
+    <div class="form-group">
+        <label>Pekerjaan Orang Tua</label>
+
+        <select id="pekerjaan">
+            <option>PNS</option>
+            <option>Wiraswasta</option>
+            <option>Petani</option>
+            <option>Buruh</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Nilai Matematika</label>
+        <input type="number" id="mat">
+    </div>
+
+    <div class="form-group">
+        <label>Nilai Bahasa Inggris</label>
+        <input type="number" id="ing">
+    </div>
+
+    <div class="form-group">
+        <label>Nilai Umum</label>
+        <input type="number" id="umum">
+    </div>
+
+    <button id="btnSimpan">
+        SIMPAN
+    </button>
+
+</div>
+
+<div class="table-container">
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Kode</th>
+                <th>Nama</th>
+                <th>JK</th>
+                <th>Tanggal</th>
+                <th>Asal</th>
+                <th>Pekerjaan</th>
+                <th>Tempat Tes</th>
+                <th>Mat</th>
+                <th>Ing</th>
+                <th>Umum</th>
+                <th>Rata-rata</th>
+                <th>Keterangan</th>
+            </tr>
+        </thead>
+
+        <tbody id="tabelData">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
